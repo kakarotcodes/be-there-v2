@@ -35,9 +35,9 @@ const AIRepairAssistant: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
-        <div className="bg-gradient-to-r from-indigo-600 to-blue-600 p-8 text-white text-center">
+        <div className="bg-gradient-to-r from-orange-400 to-amber-500 p-8 text-white text-center">
           <h1 className="text-3xl font-bold mb-2">Be There AI Repair Assistant</h1>
-          <p className="text-indigo-100">Get an instant diagnosis for your furniture damage using advanced visual AI.</p>
+          <p className="text-orange-100">Get an instant diagnosis for your furniture damage using advanced visual AI.</p>
         </div>
 
         <div className="p-8">
@@ -46,7 +46,7 @@ const AIRepairAssistant: React.FC = () => {
             <div className="space-y-6">
               <div 
                 className={`relative aspect-square rounded-2xl border-2 border-dashed flex items-center justify-center overflow-hidden transition-colors ${
-                  selectedImage ? 'border-blue-500' : 'border-slate-300 bg-slate-50'
+                  selectedImage ? 'border-orange-400' : 'border-slate-300 bg-slate-50'
                 }`}
               >
                 {selectedImage ? (
@@ -80,7 +80,7 @@ const AIRepairAssistant: React.FC = () => {
                 <button 
                   onClick={handleAnalyze}
                   disabled={!selectedImage || analyzing}
-                  className="flex-1 py-3 px-6 bg-blue-600 text-white rounded-xl font-bold disabled:opacity-50 disabled:cursor-not-allowed hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200"
+                  className="flex-1 py-3 px-6 bg-orange-400 text-white rounded-xl font-bold disabled:opacity-50 disabled:cursor-not-allowed hover:bg-orange-500 transition-colors shadow-lg shadow-orange-200"
                 >
                   {analyzing ? 'Analyzing...' : 'Run Diagnosis'}
                 </button>
@@ -90,9 +90,9 @@ const AIRepairAssistant: React.FC = () => {
             {/* Results Area */}
             <div className="flex flex-col h-full">
               {result ? (
-                <div className="bg-blue-50 rounded-2xl p-6 h-full border border-blue-100 animate-in fade-in slide-in-from-right-4 duration-500">
+                <div className="bg-orange-50 rounded-2xl p-6 h-full border border-orange-100 animate-in fade-in slide-in-from-right-4 duration-500">
                   <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     Analysis Complete
@@ -100,11 +100,11 @@ const AIRepairAssistant: React.FC = () => {
                   
                   <div className="space-y-6">
                     <div>
-                      <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest block mb-1">Detected Damage</span>
+                      <span className="text-[10px] font-bold text-orange-500 uppercase tracking-widest block mb-1">Detected Damage</span>
                       <p className="text-slate-900 font-medium">{result.damageType}</p>
                     </div>
                     <div>
-                      <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest block mb-1">Repairability Score</span>
+                      <span className="text-[10px] font-bold text-orange-500 uppercase tracking-widest block mb-1">Repairability Score</span>
                       <div className="flex items-center gap-2">
                         <span className={`px-2 py-1 rounded text-xs font-bold ${
                           result.repairability === 'High' ? 'bg-green-100 text-green-700' : 
@@ -115,10 +115,10 @@ const AIRepairAssistant: React.FC = () => {
                       </div>
                     </div>
                     <div>
-                      <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest block mb-1">Recommended Service</span>
+                      <span className="text-[10px] font-bold text-orange-500 uppercase tracking-widest block mb-1">Recommended Service</span>
                       <p className="text-slate-900 font-medium">{result.estimatedService}</p>
                     </div>
-                    <div className="p-4 bg-white rounded-xl border border-blue-200 shadow-sm">
+                    <div className="p-4 bg-white rounded-xl border border-orange-200 shadow-sm">
                       <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">Expert Advice</span>
                       <p className="text-sm text-slate-600 italic">"{result.proAdvice}"</p>
                     </div>

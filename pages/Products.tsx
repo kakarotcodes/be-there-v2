@@ -33,7 +33,7 @@ const Products: React.FC<ProductsProps> = ({ onAddToCart }) => {
             <input 
               type="text"
               placeholder="Search equipment, brands, or parts..."
-              className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+              className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-orange-400 focus:border-transparent outline-none transition-all"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -50,8 +50,8 @@ const Products: React.FC<ProductsProps> = ({ onAddToCart }) => {
               key={cat}
               onClick={() => setActiveCategory(cat as any)}
               className={`px-6 py-3 rounded-xl font-semibold whitespace-nowrap transition-all ${
-                activeCategory === cat 
-                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-200' 
+                activeCategory === cat
+                  ? 'bg-orange-400 text-white shadow-lg shadow-orange-200'
                   : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'
               }`}
             >
@@ -78,7 +78,7 @@ const Products: React.FC<ProductsProps> = ({ onAddToCart }) => {
           <p className="text-slate-500 mt-2">Try adjusting your filters or search query.</p>
           <button 
             onClick={() => {setActiveCategory('All'); setSearchQuery('');}}
-            className="mt-6 text-blue-600 font-bold"
+            className="mt-6 text-orange-500 font-bold"
           >
             Clear all filters
           </button>

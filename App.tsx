@@ -35,7 +35,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="min-h-screen flex flex-col bg-slate-50">
-        <Navbar cartCount={cartCount} />
+        <Navbar />
         
         <main className="flex-1">
           <Routes>
@@ -64,7 +64,7 @@ const App: React.FC = () => {
                     ))}
                     <div className="mt-8 border-t pt-4 text-right">
                       <p className="text-2xl font-bold">Total: ${cart.reduce((a, b) => a + (b.price * b.quantity), 0).toFixed(2)}</p>
-                      <button className="mt-4 bg-blue-600 text-white px-8 py-3 rounded-xl font-bold">Checkout Now</button>
+                      <button className="mt-4 bg-orange-400 text-white px-8 py-3 rounded-xl font-bold hover:bg-orange-500 transition-colors">Checkout Now</button>
                     </div>
                   </div>
                 )}
@@ -78,7 +78,7 @@ const App: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
               <div className="col-span-1 md:col-span-2">
                 <div className="flex items-center gap-2 mb-6">
-                  <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <div className="w-8 h-8 bg-orange-400 rounded-lg flex items-center justify-center">
                     <span className="text-white font-bold text-lg">B</span>
                   </div>
                   <span className="text-xl font-bold text-slate-900">Be There</span>
@@ -90,10 +90,10 @@ const App: React.FC = () => {
               <div>
                 <h4 className="font-bold mb-4">Quick Links</h4>
                 <ul className="space-y-2 text-slate-500">
-                  <li><a href="#" className="hover:text-blue-600">About Us</a></li>
-                  <li><a href="#" className="hover:text-blue-600">Compliance Info</a></li>
-                  <li><a href="#" className="hover:text-blue-600">Privacy Policy</a></li>
-                  <li><a href="#" className="hover:text-blue-600">Contact Support</a></li>
+                  <li><a href="#" className="hover:text-orange-500">About Us</a></li>
+                  <li><a href="#" className="hover:text-orange-500">Compliance Info</a></li>
+                  <li><a href="#" className="hover:text-orange-500">Privacy Policy</a></li>
+                  <li><a href="#" className="hover:text-orange-500">Contact Support</a></li>
                 </ul>
               </div>
               <div>

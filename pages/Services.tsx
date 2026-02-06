@@ -24,8 +24,8 @@ const Services: React.FC = () => {
               { title: 'Sustainability', desc: 'Reduce landfill waste by extending the life of your furniture frames.' }
             ].map((item, idx) => (
               <div key={idx} className="flex gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-100">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-blue-600 font-bold">{idx + 1}</span>
+                <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-orange-500 font-bold">{idx + 1}</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900">{item.title}</h4>
@@ -37,22 +37,22 @@ const Services: React.FC = () => {
         </div>
         
         <div className="bg-slate-900 rounded-3xl p-8 text-white relative overflow-hidden">
-          <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-blue-500 rounded-full blur-3xl opacity-20"></div>
+          <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-orange-400 rounded-full blur-3xl opacity-20"></div>
           <h3 className="text-2xl font-bold mb-6">Request a Service Quote</h3>
           <form className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-slate-300 mb-1">Name</label>
-                <input type="text" className="w-full bg-slate-800 border-slate-700 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="John Doe" />
+                <input type="text" className="w-full bg-slate-800 border-slate-700 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-400 outline-none" placeholder="John Doe" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-slate-300 mb-1">Clinic Email</label>
-                <input type="email" className="w-full bg-slate-800 border-slate-700 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="john@clinic.com" />
+                <input type="email" className="w-full bg-slate-800 border-slate-700 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-400 outline-none" placeholder="john@clinic.com" />
               </div>
             </div>
             <div>
               <label className="block text-sm font-medium text-slate-300 mb-1">Furniture Type</label>
-              <select className="w-full bg-slate-800 border-slate-700 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
+              <select className="w-full bg-slate-800 border-slate-700 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-400 outline-none">
                 <option>Dental Chair</option>
                 <option>Examination Table</option>
                 <option>Waiting Room Seating</option>
@@ -61,9 +61,9 @@ const Services: React.FC = () => {
             </div>
             <div>
               <label className="block text-sm font-medium text-slate-300 mb-1">Description of Damage</label>
-              <textarea className="w-full bg-slate-800 border-slate-700 rounded-lg px-4 py-2 h-32 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="e.g. 5-inch tear in lumbar area..."></textarea>
+              <textarea className="w-full bg-slate-800 border-slate-700 rounded-lg px-4 py-2 h-32 focus:ring-2 focus:ring-orange-400 outline-none" placeholder="e.g. 5-inch tear in lumbar area..."></textarea>
             </div>
-            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors shadow-lg">
+            <button className="w-full bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 rounded-lg transition-colors shadow-lg">
               Send Quote Request
             </button>
           </form>
@@ -78,8 +78,8 @@ const Services: React.FC = () => {
               <h3 className="text-xl font-bold text-slate-900 mb-2">{service.title}</h3>
               <p className="text-slate-500 text-sm mb-6">{service.description}</p>
               <div className="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between">
-                <span className="text-blue-600 font-bold">{service.priceEstimate}</span>
-                <button className="text-slate-900 font-bold text-sm hover:text-blue-600">Select Service</button>
+                <span className="text-orange-500 font-bold">{service.priceEstimate}</span>
+                <button className="text-slate-900 font-bold text-sm hover:text-orange-500">Select Service</button>
               </div>
             </div>
           </div>
