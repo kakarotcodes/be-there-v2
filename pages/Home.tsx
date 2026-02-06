@@ -8,24 +8,24 @@ const Home: React.FC = () => {
   return (
     <div className="space-y-16 pb-20">
       {/* Hero Section */}
-      <section className="relative bg-slate-900 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://picsum.photos/seed/hero1/1600/900" 
-            alt="Medical background" 
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent"></div>
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-              We'll Be There for your Medical Seating Repairs
-            </h1>
-            <p className="text-xl text-slate-300 mb-8">
-              Premium medical equipment repairs. Helping healthcare providers maintain their facilities with excellence.
-            </p>
+      <section className="relative">
+        <img
+          src="/assets/banner.png"
+          alt="Medical background"
+          className="w-full h-auto"
+        />
+        <div className="absolute inset-0 flex flex-col justify-between py-8 md:py-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
+            <div className="max-w-2xl text-right">
+              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">
+                We'll Be There for your Medical Seating Repairs
+              </h1>
+              <p className="text-xl text-white/90 drop-shadow">
+                Premium medical equipment repairs. Helping healthcare providers maintain their facilities with excellence.
+              </p>
+            </div>
+          </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
             <button
               onClick={() => setShowModal(true)}
               className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105"
