@@ -1,0 +1,7 @@
+{
+  "name": "Be There - Medical & Upholstery Marketplace",
+  "description": "A comprehensive marketplace for medical equipment sales and professional furniture upholstery repair services.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
