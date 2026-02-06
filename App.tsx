@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import Services from './pages/Services';
 import AIRepairAssistant from './pages/AIRepairAssistant';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import AboutUs from './pages/AboutUs';
 import { Product, CartItem } from './types';
 
 const App: React.FC = () => {
@@ -43,6 +45,8 @@ const App: React.FC = () => {
             <Route path="/products" element={<Products onAddToCart={handleAddToCart} />} />
             <Route path="/services" element={<Services />} />
             <Route path="/ai-assistant" element={<AIRepairAssistant />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/about-us" element={<AboutUs />} />
             <Route path="/cart" element={
               <div className="max-w-7xl mx-auto px-4 py-12 text-center">
                 <h1 className="text-3xl font-bold mb-4">Your Shopping Cart</h1>
@@ -90,19 +94,17 @@ const App: React.FC = () => {
               <div>
                 <h4 className="font-bold mb-4">Quick Links</h4>
                 <ul className="space-y-2 text-slate-500">
-                  <li><a href="#" className="hover:text-orange-500">About Us</a></li>
+                  <li><a href="#/about-us" className="hover:text-orange-500">About Us</a></li>
                   <li><a href="#" className="hover:text-orange-500">Compliance Info</a></li>
-                  <li><a href="#" className="hover:text-orange-500">Privacy Policy</a></li>
+                  <li><a href="#/privacy-policy" className="hover:text-orange-500">Privacy Policy</a></li>
                   <li><a href="#" className="hover:text-orange-500">Contact Support</a></li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-bold mb-4">Contact</h4>
                 <ul className="space-y-2 text-slate-500">
-                  <li>1234 Healthcare Plaza</li>
-                  <li>Medical District, ST 56789</li>
-                  <li>+1 (555) 000-0000</li>
-                  <li>support@bethere.med</li>
+                  <li>+1 647 471 1249</li>
+                  <li>betheresofarepairs@gmail.com</li>
                 </ul>
               </div>
             </div>

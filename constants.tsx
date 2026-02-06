@@ -64,20 +64,20 @@ export const SERVICES: Service[] = [
     title: 'Dental Chair Re-upholstery',
     description: 'Restore worn dental chairs with medical-grade, puncture-resistant materials.',
     priceEstimate: 'From $450',
-    imageUrl: 'https://picsum.photos/seed/dental1/600/400'
+    imageUrl: '/assets/dental_chair_new.png'
   },
   {
     id: 's2',
-    title: 'Waiting Room Renewal',
+    title: 'Medical Recliner Repair',
     description: 'Complete overhaul of clinic waiting room sofas and seating.',
     priceEstimate: 'Quote Based',
-    imageUrl: 'https://picsum.photos/seed/waiting1/600/400'
+    imageUrl: '/assets/recliner.png'
   },
   {
     id: 's3',
-    title: 'Physical Therapy Table Repair',
+    title: 'Hospital Bed Repair',
     description: 'Specialized padding and vinyl work for heavy-use PT equipment.',
     priceEstimate: 'From $200',
-    imageUrl: 'https://picsum.photos/seed/therapy1/600/400'
+    imageUrl: '/assets/medical_bed.png'
   }
 ];
