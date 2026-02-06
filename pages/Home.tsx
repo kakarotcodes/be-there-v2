@@ -17,10 +17,10 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 flex flex-col justify-between py-8 md:py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
             <div className="max-w-2xl text-right">
-              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">
+              <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-4 md:mb-6 leading-tight text-white drop-shadow-lg">
                 We'll Be There for your Medical Seating Repairs
               </h1>
-              <p className="text-xl text-white/90 drop-shadow">
+              <p className="text-sm sm:text-lg md:text-xl text-white/90 drop-shadow">
                 Premium medical equipment repairs. Helping healthcare providers maintain their facilities with excellence.
               </p>
             </div>
