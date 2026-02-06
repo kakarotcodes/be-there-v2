@@ -1,6 +1,5 @@
 
 import React, { useState, useRef } from 'react';
-import { analyzeRepairImage } from '../services/geminiService';
 
 const AIRepairAssistant: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -23,9 +22,13 @@ const AIRepairAssistant: React.FC = () => {
   const handleAnalyze = async () => {
     if (!selectedImage) return;
     setAnalyzing(true);
-    const base64 = selectedImage.split(',')[1];
-    const data = await analyzeRepairImage(base64);
-    setResult(data);
+    // TODO: Implement your own AI analysis service
+    setResult({
+      damageType: "Analysis service not configured",
+      repairability: "Medium",
+      estimatedService: "Please configure an AI service to enable analysis",
+      proAdvice: "Contact support for manual assessment"
+    });
     setAnalyzing(false);
   };
 

@@ -91,7 +91,7 @@ const Home: React.FC<HomeProps> = ({ onAddToCart }) => {
         <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-8 md:p-16 text-white flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="max-w-xl">
             <h2 className="text-3xl font-bold mb-4">Try Our AI Repair Analysis Tool</h2>
-            <p className="text-blue-100 text-lg mb-6">Take a photo of your damaged furniture, and our Gemini-powered assistant will provide an instant diagnosis and repair estimate.</p>
+            <p className="text-blue-100 text-lg mb-6">Take a photo of your damaged furniture, and our AI-powered assistant will provide an instant diagnosis and repair estimate.</p>
             <Link to="/ai-assistant" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-colors">Launch AI Assistant</Link>
           </div>
           <div className="w-full md:w-1/3 aspect-video bg-white/10 rounded-2xl border border-white/20 flex items-center justify-center backdrop-blur-sm">
